@@ -1,0 +1,97 @@
+body{
+    color:#333;
+    font-family:Verdana,sans-serif;
+    /*余白を白染めしている
+    margin-top:0px;
+    margin-bottom:0px;
+    margin-right:0px;を省略させている。*/
+    margin:0px;
+    margin:0; /*二つの行は同じ意味*/
+}
+
+header{
+    background-color:#efefef;
+    padding-top:32px;
+    padding-bottom:32px;
+}
+
+.container{
+    /*background-color:pink;*/
+    width:400px;
+    /*ピンクの背景色を中央ぞろえにする*/
+    margin-left:auto; /*margin=空白を開ける*/
+    margin-right:auto;
+    display: flex ;
+    align-items:center;/*すべてのものを中央揃えにする*/
+}
+
+.icon img{           /*画像を丸くしている*/
+    border-radius:20px;
+    border-radius:50%;
+    border-width:4px; /*白い線の太さ*/
+    border-style: solid;/*線の種類*/
+    border-color:white;
+}
+.info{
+   /* background-color:tomato;*/
+    margin-left:32px;
+}
+
+.info h1{
+    font-weight:normal;/*「林　直樹」の線の太さをを普通にした*/
+    font-size:45px;
+    margin:0;/*上下の隙間を０にした*/
+}
+
+.info p{
+    font-family: 'Oswald', sans-serif;
+    margin:0;
+    margin-bottom:16px;/*一つ上の行で隙間を０にした後、
+    下の部分だけ隙間を開けている*/
+}
+
+.info ul{
+    margin:0;
+    padding:0;
+    list-style-type:none;/*リストの先端にある黒丸をけした*/
+    display:flex;/*二つのulの部分を横並びにした*/
+}
+.info ul li{
+    margin-right:8px;
+}
+
+.works{  /*画像を中央揃えにした*/
+    width:400px;
+    margin-left:auto;
+    margin-right:auto;
+}
+
+.works >　 h1  {
+    font-weight:normal;/*字のフォントの
+    種類を選択した。*/
+    font-size:24px;
+    text-align:center;/*テキストを中央揃えにした*/
+    margin-top:60px;
+    margin-bottom:60px;
+}
+
+.works > section{
+    margin-bottom:60px;
+}
+
+.works > section > h1{
+    font-weight:normal;
+}
+
+.works p{
+    line-height:1.8;/*pの行の高さを1.8倍にした*/
+    font-family: 'Oswald', sans-serif;
+}
+
+footer p{
+    font-family: 'Oswald', sans-serif;
+    text-align:center;/*テキストを中央揃えにした。*/
+    font-size:14px;
+    margin-bottom:60px;
+    color:gray;
+}
